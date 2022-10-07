@@ -3,12 +3,12 @@
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-areas:
-    "header"
-    "contenido"
-    "rodapie";
+        "header"
+        "contenido"
+        "footer";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;
-    
+    grid-template-rows: 50px auto auto;
+
 }
 
 .header {
@@ -24,7 +24,8 @@
     padding: .5rem 1rem;
 }
 
-.menu__link:hover, .menu_link:active {
+.menu__link:hover,
+.menu_link:active {
     border-bottom: 2px solid #0073e6;
 
 }
@@ -35,8 +36,11 @@
     padding: 0 2rem;
 }
 
-.rodapie { 
-   /*background: #0099ff;*/
-    grid-area: rodapie;
-    
+.footer {
+    /*background: #0099ff;*/
+    background: #fdfdfd;
+    color: #333333;
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
 }
